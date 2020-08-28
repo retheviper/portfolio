@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic_coffee from '../images/pic_coffee.jpg'
+import pic_character from '../images/pic_character.jpg'
+import pic_seworld from '../images/pic_seworld.jpg'
+import pic_write from '../images/pic_write.jpg'
+import Video from './Video'
 
 class Main extends React.Component {
   render() {
@@ -22,35 +24,33 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">About</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic_coffee} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            韓国で日本語と韓国語教育を専攻し、日本語の翻訳・研究・教育に従事しました。
+            韓国放送通信大学のティーティングアシスタントとして在職中に、知識の伝達という
+            教育の本質は、対面でなくデジタル化・永続化したデータとして成すべきことと
+            思い、その根幹となる技術の必要性を感じました。
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            以後、韓国貿易協会のソフトウェアエンジニア養成課程のSCIT
+            Masterコースに入学。
+            コースの中では日本の応用情報処理技術者に対応する情報処理技士を取得し、
+            Java、Spring、JavaScript、jQuery、MyBatisなどを学びました。
+            現在は努力を認めていただき、2019年から東京の某IT企業にてシステムエンジニアとして在職中です。
+          </p>
+          <p>
+            仕事としては主にJavaとSpring
+            Bootによるサーバサイド共通部品を作っていますが、
+            フロントエンドやモバイルアプリ、デスクトップアプリの開発にも興味を持っています。
           </p>
           {close}
         </article>
@@ -62,47 +62,71 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Work: JLPT Test</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={pic_character} alt="" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            Javaを学び、初めて完成したアプリケーション。デスクトップアプリの完成を目標として、
+            JavaFXを独学しGUIを実現しました。また、マルチスレッドによる音声ファイルの再生と、
+            プログレスバーのリアルタイム更新も実現しています。
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            日本語能力試験(JLPT)の過去問を持って、模擬試験を行うことができるプログラムで
+            管理者モードでは問題と問題に使われる画像や音声の登録ができます。受験者モードでは、
+            管理者が登録した問題で受験し、結果を出力してもらうことができます。
+          </p>
+          <p>
+            ソースコードは
+            <a href="https://github.com/retheviper/JLPTTest">こちら</a>
+          </p>
+          <h2 className="major">Work: SE World</h2>
+          <span className="image main">
+            <img src={pic_seworld} alt="SE World" />
+          </span>
+          <p>
+            4人チームのリーダーとして開発に参加したプロジェクトです。Open
+            APIからの情報取得、 Google
+            MapやJavaScriptのライブラリ活用、ページングの実現という技術的なゴールと、ソーシャル
+            ネットワークサービスとしてのユーザーエクスペリエンスの両立を試すためのプロジェクトでした。
+            以下からプロジェクトの紹介の動画をご覧ください。
+          </p>
+          <center>
+            <Video
+              videoSrcURL="https://www.youtube.com/embed/KamwQ8SAFhE"
+              videoTitle="SE World"
+            />
+          </center>
+          <p />
+          <p>
+            韓国の公共APIから情報を定期的に取得し、展示会の
+            開かれる国、場所、日付の情報を提供します。ユーザは参加したい展示会の情報を共有したり、
+            参加後のレビューを書くことができます。私はCKEditorを使用した記事の作成、DataTables
+            を利用した一覧表示・ページング・検索機能などを担当しています。
           </p>
           {close}
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="blog"
+          className={`${this.props.article === 'blog' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">Blog</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={pic_write} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            ITの業界に転職してから学んできたものをまとめた技術系ブログを書いています。
+            ネタは特に決まったことはなく、Java、Spring、JavaScript、TypeScript、
+            Jenkins、REST API、Python、Gradleなど個人的に興味を持ったものに対して
+            ポストを書いています。
+          </p>
+          <p>
+            リンクは
+            <a href="https://retheviper.github.io">こちら</a>
           </p>
           {close}
         </article>
@@ -115,7 +139,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" data-netlify="true">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -140,25 +164,15 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
+                href="https://www.linkedin.com/in/%E8%8B%B1%E6%96%8C-%E9%87%91-6736ba194"
+                className="icon fa-linkedin"
               >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
+                <span className="label">Linkedin</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/retheviper"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
