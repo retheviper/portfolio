@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic_coffee from '../images/pic_coffee.jpg'
+import pic_excelweaver from '../images/pic_excelweaver.jpg'
 import pic_character from '../images/pic_character.jpg'
 import pic_seworld from '../images/pic_seworld.jpg'
 import pic_write from '../images/pic_write.jpg'
@@ -62,9 +63,26 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
+          <h2 className="major">Work: ExcelWeaver</h2>
+          <span className="image main">
+            <img src={pic_excelweaver} alt="ExcelWeaver" />
+          </span>
+          <p>
+           Javaを通じてExcelファイルに大量のデータを書き込んだり、読み込むためのライブラリです。
+           普通のDTOクラスに、アノテーションでシートのヘッダーの意味を与えると
+           Excelにデータを書き込むことも、読み込んだデータをDTOにマッピングすることも簡単です。
+          </p>
+          <p>
+            仕事で作っていたExcel管理ライブラリを、ソースコードの重複なしにして、より単純化・軽量化して
+            作っています。MITライセンスとして公開していますので、ご自由にお使いください。PRも歓迎いたします。
+          </p>
+          <p>
+            ソースコードは
+            <a href="https://github.com/retheviper/ExcelWeaver">こちら</a>
+          </p>
           <h2 className="major">Work: JLPT Test</h2>
           <span className="image main">
-            <img src={pic_character} alt="" />
+            <img src={pic_character} alt="JLPT Test" />
           </span>
           <p>
             Javaを学び、初めて完成したアプリケーション。デスクトップアプリの完成を目標として、
@@ -121,7 +139,8 @@ class Main extends React.Component {
           <p>
             ITの業界に転職してから学んできたものをまとめた技術系ブログを書いています。
             ネタは特に決まったことはなく、Java、Spring、JavaScript、TypeScript、
-            Jenkins、REST API、Python、Gradleなど個人的に興味を持ったものに対して
+            Jenkins、REST
+            API、Python、Gradleなど個人的に興味を持ったものに対して
             ポストを書いています。
           </p>
           <p>
