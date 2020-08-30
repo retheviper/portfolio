@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import old_portfolio from '../pdfs/20180927_PersonalPortfolio_Youngbin_Kim.pdf'
 import pic_coffee from '../images/pic_coffee.jpg'
 import pic_excelweaver from '../images/pic_excelweaver.jpg'
 import pic_character from '../images/pic_character.jpg'
@@ -55,7 +56,7 @@ class Main extends React.Component {
           </p>
           <p>
             2018年のポートフォリオは
-            <a href="../pdfs/20180927_PersonalPortfolio_Youngbin_Kim.pdf">
+            <a href={old_portfolio}>
               こちら
             </a>
           </p>
