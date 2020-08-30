@@ -55,7 +55,7 @@ class Main extends React.Component {
           </p>
           <p>
             2018年のポートフォリオは
-            <a href="https://github.com/retheviper/portfolio/blob/master/src/pdfs/20180927_PersonalPortfolio_Youngbin_Kim.pdf">
+            <a href="../pdfs/20180927_PersonalPortfolio_Youngbin_Kim.pdf">
               こちら
             </a>
           </p>
