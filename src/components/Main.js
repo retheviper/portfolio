@@ -53,6 +53,12 @@ class Main extends React.Component {
             Bootによるサーバサイド共通部品を作っていますが、
             フロントエンドやモバイルアプリ、デスクトップアプリの開発にも興味を持っています。
           </p>
+          <p>
+            2018年のポートフォリオは
+            <a href="https://github.com/retheviper/portfolio/blob/master/src/pdfs/20180927_PersonalPortfolio_Youngbin_Kim.pdf">
+              こちら
+            </a>
+          </p>
           {close}
         </article>
 
@@ -68,9 +74,9 @@ class Main extends React.Component {
             <img src={pic_excelweaver} alt="ExcelWeaver" />
           </span>
           <p>
-           Javaを通じてExcelファイルに大量のデータを書き込んだり、読み込むためのライブラリです。
-           普通のDTOクラスに、アノテーションでシートのヘッダーの意味を与えると
-           Excelにデータを書き込むことも、読み込んだデータをDTOにマッピングすることも簡単です。
+            Javaを通じてExcelファイルに大量のデータを書き込んだり、読み込むためのライブラリです。
+            普通のDTOクラスに、アノテーションでシートのヘッダーの意味を与えると
+            Excelにデータを書き込むことも、読み込んだデータをDTOにマッピングすることも簡単です。
           </p>
           <p>
             仕事で作っていたExcel管理ライブラリを、ソースコードの重複なしにして、より単純化・軽量化して
