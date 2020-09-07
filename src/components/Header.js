@@ -13,8 +13,7 @@ const Header = props => (
           Hello!
           <br /> if interested,
           <br />
-          visit my {' '}
-          <a href="https://github.com/retheviper">GitHub</a>!
+          visit my <a href="https://github.com/retheviper">GitHub</a>!
         </p>
       </div>
     </div>
