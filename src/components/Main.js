@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import old_portfolio from '../pdfs/20180927_PersonalPortfolio_Youngbin_Kim.pdf'
 import pic_coffee from '../images/pic_coffee.jpg'
+import pic_pythontools from '../images/pic_pythontools.jpg'
 import pic_excelweaver from '../images/pic_excelweaver.jpg'
 import pic_character from '../images/pic_character.jpg'
 import pic_seworld from '../images/pic_seworld.jpg'
@@ -56,9 +57,7 @@ class Main extends React.Component {
           </p>
           <p>
             2018年のポートフォリオは
-            <a href={old_portfolio}>
-              こちら
-            </a>
+            <a href={old_portfolio}>こちら</a>
           </p>
           {close}
         </article>
@@ -70,6 +69,23 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
+          <h2 className="major">Work: PythonTools</h2>
+          <span className="image main">
+            <img src={pic_pythontools} alt="PythonTools" />
+          </span>
+          <p>
+            Pythonを使って、簡単な自動化のツールを作り、公開しています。
+            主にPC上のファイルを管理するためのものが多いですが、ツールとしての機能を実現するだけでなく、
+            さまざまなライブラリの使い方を試すテストベッドとしても活用しています。
+          </p>
+          <p>
+            例えば同じパスにある重複するファイルを削する、実際のファイルの情報を判定して拡張子を正す、
+            圧縮ファイルのタイプを変える、フォルダ名で複数の圧縮ファイルを生成するなどの便利機能を集めたようなものなどがあります。
+          </p>
+          <p>
+            ソースコードは
+            <a href="https://github.com/retheviper/PythonTools">こちら</a>
+          </p>
           <h2 className="major">Work: ExcelWeaver</h2>
           <span className="image main">
             <img src={pic_excelweaver} alt="ExcelWeaver" />
@@ -145,9 +161,9 @@ class Main extends React.Component {
           </span>
           <p>
             ITの業界に転職してから学んできたものをまとめた技術系ブログを書いています。
-            ネタは特に決まったことはなく、Java、Spring、JavaScript、TypeScript、
+            ネタは特に決まったことはなく、Java、Spring、Python、JavaScript、TypeScript、
             Jenkins、REST
-            API、Python、Gradleなど個人的に興味を持ったものに対して
+            API、Gradleなど個人的に興味を持ったものに対して
             ポストを書いています。
           </p>
           <p>
