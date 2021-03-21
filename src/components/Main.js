@@ -192,7 +192,7 @@ class Main extends React.Component {
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="contract" />
             </div>
             <ul className="actions">
               <li>
