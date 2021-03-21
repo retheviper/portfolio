@@ -161,7 +161,7 @@ class Main extends React.Component {
           </span>
           <p>
             ITの業界に転職してから学んできたものをまとめた技術系ブログを書いています。
-            ネタは特に決まったことはなく、Java、Spring、Python、JavaScript、TypeScript、
+            ネタは特に決まったことはなく、Java、Kotlin、Go、Spring、Python、JavaScript、TypeScript、
             Jenkins、REST API、Gradleなど個人的に興味を持ったものに対して
             ポストを書いています。
           </p>
@@ -180,7 +180,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form name="contract" method="POST" data-netlify="true">
+          <form name="contract" method="post" data-netlify="true">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -192,6 +192,7 @@ class Main extends React.Component {
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
+              <input type="hidden" name="form-name" value="contact" />
             </div>
             <ul className="actions">
               <li>
