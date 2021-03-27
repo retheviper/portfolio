@@ -94,14 +94,18 @@ class Main extends React.Component {
             Javaを通じてExcelファイルに大量のデータを書き込んだり、読み込むためのライブラリです。
             普通のDTOクラスに、アノテーションでシートのヘッダーの意味を与えると
             Excelにデータを書き込むことも、読み込んだデータをDTOにマッピングすることも簡単です。
+            最近はKotlinで書いたバージョンも公開しています。
           </p>
           <p>
             仕事で作っていたExcel管理ライブラリを、ソースコードの重複なしにして、より単純化・軽量化して
             作っています。MITライセンスとして公開していますので、ご自由にお使いください。PRも歓迎いたします。
           </p>
           <p>
-            ソースコードは
+            Javaバージョンのソースコードは
             <a href="https://github.com/retheviper/ExcelWeaver">こちら</a>
+            <br></br>
+            Kotlinバージョンのソースコードは
+            <a href="https://github.com/retheviper/ExcelWeaverKotlin">こちら</a>
           </p>
           <h2 className="major">Work: JLPT Test</h2>
           <span className="image main">
