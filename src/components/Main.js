@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import old_portfolio from '../pdfs/20180927_PersonalPortfolio_Youngbin_Kim.pdf'
 import pic_coffee from '../images/pic_coffee.jpg'
+import pic_kotlintools from '../images/pic_kotlintools.jpg'
 import pic_pythontools from '../images/pic_pythontools.jpg'
 import pic_excelweaver from '../images/pic_excelweaver.jpg'
 import pic_character from '../images/pic_character.jpg'
@@ -44,7 +45,8 @@ class Main extends React.Component {
             思い、その根幹となる技術の必要性を感じました。
           </p>
           <p>
-            以後、韓国貿易協会のソフトウェアエンジニア養成課程のSCIT Masterコースに入学。
+            以後、韓国貿易協会のソフトウェアエンジニア養成課程のSCIT
+            Masterコースに入学。
             コースの中では日本の応用情報処理技術者に対応する情報処理技士を取得し、
             Java、Spring、JavaScript、jQuery、MyBatisなどを学びました。
             現在は努力を認めていただき、2019年から東京でエンジニアとして在職中です。
@@ -67,6 +69,20 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
+          <h2 className="major">Work: KotlinTools</h2>
+          <span className="image main">
+            <img src={pic_kotlintools} alt="KotlinTools" />
+          </span>
+          <p>
+            Kotlinを使いながら共通化できた方が良いかなと思った処理などをまとめて作ったライブラリです。単純なショートカット的なものから、JavaのライブラリをよりKotlinらしいコードとして使えるような工夫も入っています。
+          </p>
+          <p>
+            PathからZIPを生成する拡張関数や、PipedになったInputStreamとOutputStreamのPairを生成、TemporalをInt型に変換、LocalDateから元号を取得、指定のインデックスまでCollectionをループさせるなど色々な関数が集まっており、無料利用ができますのでぜひお試しください。フィードバックももちろん歓迎いたします。
+          </p>
+          <p>
+            ソースコードは
+            <a href="https://github.com/retheviper/kotlintools">こちら</a>
+          </p>
           <h2 className="major">Work: PythonTools</h2>
           <span className="image main">
             <img src={pic_pythontools} alt="PythonTools" />
